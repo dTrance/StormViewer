@@ -47,6 +47,38 @@
             </objects>
             <point key="canvasLocation" x="1039.2" y="21.139430284857571"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="rpg-MI-8xO">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="aaC-p3-mfD" customClass="DetailViewController" customModule="StormViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EMr-IO-R61"/>
+                        <viewControllerLayoutGuide type="bottom" id="FVY-Sy-p2a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="suD-t6-JUh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5KW-IV-tcN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5KW-IV-tcN" firstAttribute="leading" secondItem="suD-t6-JUh" secondAttribute="leading" id="Qdn-eW-r7t"/>
+                            <constraint firstItem="5KW-IV-tcN" firstAttribute="bottom" secondItem="FVY-Sy-p2a" secondAttribute="top" id="U9q-Xh-4kk"/>
+                            <constraint firstItem="5KW-IV-tcN" firstAttribute="top" secondItem="suD-t6-JUh" secondAttribute="top" id="VPe-G8-NL0"/>
+                            <constraint firstAttribute="trailing" secondItem="5KW-IV-tcN" secondAttribute="trailing" id="Ycv-sX-ehW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5KW-IV-tcN" id="4AQ-3u-da3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nKx-L0-H5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781.5999999999999" y="21.139430284857571"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hrV-9A-4Kg">
             <objects>

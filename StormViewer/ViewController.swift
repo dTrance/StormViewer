@@ -37,6 +37,15 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // try loading the view controller and typecasting it to be DetailViewController
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            // set its selectedImage property
+            vc.selectedImage = pictures[indexPath.row]
+            // push it onto the navigation controller
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     
     override func didReceiveMemoryWarning() {
